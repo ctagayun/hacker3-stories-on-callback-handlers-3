@@ -18,7 +18,8 @@ import * as React from 'react';
       title
      );
   
- // Eliminate "return" statement and enclosing bracket if no business 
+ //Arrow function - 
+ //Eliminate "return" statement and enclosing bracket if no business 
  //business logic. Otherwise retain the {} and put a "return" statement
  const App = () => { 
      
@@ -98,7 +99,7 @@ import * as React from 'react';
     //of -->> searchTerm
     const [searchTerm, setSearchTerm] = React.useState('');
 
-     const handleChange = (event) =>{
+    const handleChange = (event) =>{
        console.log('The event is=' + event); 
        console.log('The value of event is=' + event.target.value);
        //assign the value to the updater method of the React.useState  
