@@ -12,7 +12,7 @@ import * as React from 'react';
  //var lastName = 'Tagayun';
 
 // function getTitle(title) { - convert to arrow function
-// Eliminate "return" statement and enclosing bracket
+// Eliminate "return" statement and enclosing bracket - concise
  const getTitle =(title) => 
     (
       title
@@ -20,7 +20,7 @@ import * as React from 'react';
   
  //Arrow function - 
  //Eliminate "return" statement and enclosing bracket if no business 
- //business logic. Otherwise retain the {} and put a "return" statement
+ //business logic. Otherwise retain the {} and put a "return" statement - block
  const App = () => { 
      
       const stories = [
@@ -194,3 +194,24 @@ export default App;
  //stateful value which changes over time. And whenever this stateful value 
  //changes, the affected components (here: Search component) 
  //will re-render to use it (here: to display the recent value).
+
+  //Work flow of a useState:
+  //     When the user types into the input field, the input field's change event 
+  //     runs into the event handler. The handler's logic uses the event's value 
+  //     of the target and the state updater function to set the updated state. 
+  //     Afterward, the component re-renders (read: the component function runs). 
+  //     The updated state becomes the current state (here: searchTerm) and is 
+  //     displayed in the component's JSX.
+
+  //Arrow Function
+  // function getTitle(title) { - convert to arrow function
+  // Eliminate "return" statement and enclosing bracket - concise
+ /*const getTitle =(title) => 
+ (
+   title
+  );
+
+  //Arrow function - 
+ //Eliminate "return" statement and enclosing bracket if no business 
+ //business logic. Otherwise retain the {} and put a "return" statement - block
+const App = () => {} */
