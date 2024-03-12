@@ -99,6 +99,9 @@ import * as React from 'react';
     //of -->> searchTerm
     const [searchTerm, setSearchTerm] = React.useState('');
 
+    //Now whenever the user types something in the input field, the value of 
+    //event.target.value will populate --> setSearchTerm() the updater method 
+    //of -->> searchTerm
     const handleChange = (event) =>{
        console.log('The event is=' + event); 
        console.log('The value of event is=' + event.target.value);
